@@ -1,0 +1,35 @@
+{
+    "name": "cli-logger",
+    "version": "1.0.0",
+    "description": "CLI 打印日志",
+    "main": "index.js",
+    "scripts": {
+        "init": "rm -rf node_modules package-lock.json && npm install",
+        "clean": "rm -fr dist",
+        "start": "npm run build -- -w",
+        "build": "npm run clean && tsc -p src"
+    },
+    "dependencies": {
+        "extglob": "3.0.0",
+        "glob": "7.2.0",
+        "lodash.uniq": "4.5.0"
+    },
+    "devDependencies": {
+        "@types/node": "16.11.6",
+        "typescript": "4.1.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GitHubJian/cli-logger.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GitHubJian/cli-logger/issues"
+    },
+    "homepage": "https://github.com/GitHubJian/cli-logger#readme",
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}
